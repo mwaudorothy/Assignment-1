@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url(/Roboto-Regular.ttf);
+}
+*{
+    font-family: Roboto;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 0.8px;
+    scroll-behavior: smooth;
+}
+
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navigation-bar ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-right: 80px;
+
+}
+.navigation-bar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.navigation-bar h1{
+    margin-left: 80px ;
+}
+.hero-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/Elephant.png);
+    background-repeat: none;
+    background-size: cover;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+.hero-section h2{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.hero-section h5{
+    font-size: 24px;
+    color: rgb(218, 218, 218);
+    font-weight: 200;
+}
+.hero-section a{
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(148, 145, 145);
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(201, 201, 201, 0.575);
+}
+.about img{
+    width: 500px;
+    border-radius: 20px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 600px;
+}
+.about-text-single{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.about-text-single p{
+    font-weight: 200px;
+    color: rgb(94, 94, 94);
+}
+.prices{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.prices-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.prices-text h1{
+    font-size: 36px;
+}
+.prices-text h6{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(87, 87, 87);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.price-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.price-box input{
+    padding: 5px;
+    margin-top: 20px;
+}
+.price-box p{
+    color: rgb(190, 190, 190);
+    font-weight: 200;
+}
+@media (max-width: 500px) {
+    .about img{
+        width: 300px;
+        border-radius: 20px;
+    }
+    .navigation-bar, .about, .prices{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navigation-bar h1{
+        margin-left: 20px;
+    }
+}
