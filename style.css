@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/Elephant.png);
+    background-image: url(/Elephant.png);
     background-repeat: none;
     background-size: cover;
     flex-direction: column;
